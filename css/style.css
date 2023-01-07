@@ -114,6 +114,16 @@ small, .text_small {font-size: 0.667rem;}
 
 /* GLOBAL STYLES*/
 
+.d-flex {
+    display: flex;
+}
+
+.f-column {
+    flex-direction: row;
+}
+.space-between {
+    justify-content: space-between;
+}
 .split-grid{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -127,6 +137,10 @@ small, .text_small {font-size: 0.667rem;}
 .col-2 {
     background-color: blueviolet;
 }
+
+.wrapper {
+    padding: 2em;
+}
 /* END GLOBAL STYLES*/
 /* MAIN STYLES*/
 
@@ -139,6 +153,17 @@ small, .text_small {font-size: 0.667rem;}
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
+}
+
+.social-sidebar img {
+    width: 1.3em;
+}
+
+.logo {
+    width: 4em;
+}
+.social-footer {
+    flex-direction: row;
 }
 
 /* NO MAIN STYLES*/
