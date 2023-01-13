@@ -1,10 +1,12 @@
+/* css reset*/
+ 
 /* Box sizing rules */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
-
+ 
 /* Remove default margin */
 body,
 h1,
@@ -18,37 +20,37 @@ dl,
 dd {
   margin: 0;
 }
-
+ 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role='list'],
 ol[role='list'] {
   list-style: none;
 }
-
+ 
 /* Set core root defaults */
 html:focus-within {
   scroll-behavior: smooth;
 }
-
+ 
 /* Set core body defaults */
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
-
+ 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   text-decoration-skip-ink: auto;
 }
-
+ 
 /* Make images easier to work with */
 img,
 picture {
   max-width: 100%;
   display: block;
 }
-
+ 
 /* Inherit fonts for inputs and buttons */
 input,
 button,
@@ -56,7 +58,7 @@ textarea,
 select {
   font: inherit;
 }
-
+ 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
@@ -72,12 +74,13 @@ select {
     scroll-behavior: auto !important;
   }
 }
-
-/* END CSS RESET*/
+ 
+/*END css reset*/
+ 
 /* Typography*/
-
+ 
 html {font-size: 100%;} /*16px*/
-
+ 
 body {
   background: white;
   font-family: 'Cabin', sans-serif;
@@ -85,85 +88,140 @@ body {
   line-height: 1.75;
   color: #000000;
 }
-
+ 
 p {margin-bottom: 1rem;}
-
+ 
 h1, h2, h3, h4, h5 {
   margin: 3rem 0 1.38rem;
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
   line-height: 1.3;
 }
-
+ 
 h1 {
   margin-top: 0;
   font-size: 7.594rem;
 }
-
+ 
 h2 {font-size: 5.063rem;}
-
+.smaller {
+    font-size: 4rem;
+}
+ 
 h3 {font-size: 3.375rem;}
-
+ 
 h4 {font-size: 2.25rem;}
-
+ 
 h5 {font-size: 1.5rem;}
-
+ 
 small, .text_small {font-size: 0.667rem;}
-
-/* END Typography*/
-
-/* GLOBAL STYLES*/
-
+ 
+/*END  Typography*/
+ 
+/*global styles*/
 .d-flex {
     display: flex;
 }
-
+ 
 .f-column {
-    flex-direction: row;
+    flex-direction: column;
+    
+ 
 }
+ 
 .space-between {
     justify-content: space-between;
 }
-.split-grid{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+.h-center {
+    align-items: center;
 }
-.col-1 {
-    background-color: coral;
+.split-grid {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
 }
-.col-2 {
-    background-color: blueviolet;
-}
-
+ 
 .wrapper {
     padding: 2em;
 }
-/* END GLOBAL STYLES*/
-/* MAIN STYLES*/
-
+ 
+.m-o {
+    margin: 0;
+}
+.btn {
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #000000;
+    
+}
+.btn-secondary {
+    border: 1px solid;
+    border-radius: 30px;
+    color: rgb(64, 67, 70);
+ 
+}
+.btn-secondary:hover {
+    
+    border-radius: 30px;
+    background-color:rgb(36, 36, 138);
+    color: aliceblue;
+   
+ 
+}
+ 
+ 
+/*END global styles*/
+ 
+/*main styles*/
+ 
+ 
 .hero > .col {
     min-height: 100vh;
-}
-
+    }
+ 
 .hero-bg {
-    background-image: url(../assets/img/thilak-mohan-WAXfQufhLJk-unsplash.jpg);
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center;
+    background-image: url(../assets/img/erik-karits-E3TZQOWh8IA-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+ 
 }
-
-.social-sidebar img {
-    width: 1.3em;
-}
-
+ 
 .logo {
     width: 4em;
+}
+ 
+.hero-copy{
+    position: relative;
+}
+.placeholder {
+    color: aliceblue;
+    font-weight: 700;
+    position: absolute;
+    left: -60px;
+    position: absolute;
+    top: -20px;
+    z-index: -1;
+}
+ 
+.social-sidebar img {
+    width: 1.3em;
+    margin: 0.5em;
+}
+ 
+.social-sidebar {
+    margin: 0 1em;
+}
+.hero-copy >h2 >span {
+    color: rgb(36, 36, 138);
 }
 .social-footer {
     flex-direction: row;
 }
-
-/* NO MAIN STYLES*/
+ 
+.hero-copy span {
+    text-transform: capitalize;
+}
+/*END main styles*/
